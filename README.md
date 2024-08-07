@@ -33,6 +33,7 @@ Calling the `getRedirectUrl` endpoint looks like this in TypeScript:
 const { redirectUrl } = await ssoready.saml.getSamlRedirectUrl({
   // the ID of the organization/workspace/team (whatever you call it)
   // you want to log the user into
+  // make sure authorization code is assigned to "SSOREADY_API_KEY" env variable for ssoReady to pick it.
   organizationExternalId: "..."
 });
 
